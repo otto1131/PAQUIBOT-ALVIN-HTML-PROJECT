@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <form class="form" onsubmit="return auth();">
+        <h1>Login</h1>
+        <input type="email" name="email" id="email" class="box" placeholder="Enter Username">
+        <input type="password" name="password" id="password" class="box" placeholder="Enter Password">
+        <button type="submit" class="btn">Login</button>
+    </form>
+
+    <script>
+        function auth(){
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if(username === "alvinpaquibot8@gmail.com" && password === "12345"){
+                window.location.href = "1st p.html";
+                alert("Login Succesful")
+                return false; // Prevent form submission
+            } else {
+                alert("Invalid credentials");
+                return false; // Prevent form submission
+            }
+        }
+    </script>
+</body>
+</html>

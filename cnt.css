@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(bg.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+.contact{
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+
+}
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+
+}
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+
+}
+.contact-form {
+    text-align: left;
+
+}
+.contact-form h2{
+font-size: 24px;
+margin-bottom: 20px;
+color: #333;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f8f9fa;
+    color: #333;
+}
+input fucos,
+textarea fucos {
+    outline: none;
+    box-shadow: 0 0 8px #bbb
+}
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #bd0ec0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+button, hover {
+    background-color: #45a049;
+}
+.contact-info h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.contact-info p{
+    margin-right: 10px;
+    color: #070707;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    .contact-wrapper{
+       
+        grid-template-columns: 1fr;
+      
+    }
+}
